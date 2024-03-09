@@ -1,0 +1,21 @@
+{
+  "name": "blobazurefunc",
+  "version": "1.0.0",
+  "description": "",
+  "scripts": {
+    "start": "func start",
+    "test": "echo \"No tests yet...\""
+  },
+  "dependencies": {
+    "@azure/functions": "^4.0.0-alpha.7",
+    "@azure/ai-form-recognizer": "^5.0.0",
+    "@azure/ai-language-text": "^1.1.0",
+    "@azure/ms-rest-js": "2.7.0",
+    "install": "^0.13.0",
+    "npm": "^10.5.0",
+    "npm-check-updates": "^16.14.15",
+    "uuid": "^9.0.0"
+  },
+  "devDependencies": {},
+  "main": "src/functions/*.js"
+}
