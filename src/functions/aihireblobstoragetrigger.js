@@ -14,8 +14,8 @@ const {
 const fs = require("fs");
 
 async function analyzeDocument(blob) {
-  const endpoint = "https://aihiredi.cognitiveservices.azure.com/";
-  const apiKey = "62d2626f91aa4356b2182266e268f11c";
+  const endpoint = "";
+  const apiKey = "";
   const modelId = "prebuilt-read";
   const client = new DocumentAnalysisClient(
     endpoint,
@@ -41,8 +41,8 @@ async function analyzeDocument(blob) {
 
   console.log(pageContent);
 
-  const nerKey = "81bc8ec5058947038df270d162b30a2b";
-  const nerEndPoint = "https://aihirelangresource.cognitiveservices.azure.com/";
+  const nerKey = "";
+  const nerEndPoint = "";
   const nerClient = new TextAnalysisClient(
     nerEndPoint,
     new nerAzureKeyCredential(nerKey)
@@ -54,8 +54,8 @@ async function analyzeDocument(blob) {
 }
 
 app.storageBlob("aihireblobstoragetrigger", {
-  path: "aihirecontainer/{name}",
-  connection: "aihireblob_STORAGE",
+  path: "",
+  connection: "",
   handler: async (blob, context) => {
     context.log(
       `Storage blob function processed blob "${context.triggerMetadata.name}" with size ${blob.length} bytes`
